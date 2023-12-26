@@ -1,0 +1,274 @@
+/* Body + Main Stuff */
+body {
+    color: white;
+    background: hsl(0, 0%, 9%);
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-space {
+    margin-bottom: 20px;
+}
+/* -------------------------------------------------------------------------------- */
+/* Spacing/image settings */ 
+.image-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.image-container img:hover {
+    opacity: 0.6; 
+    cursor: pointer
+}
+/* -------------------------------------------------------------------------------- */
+/* About Me Page Stuff */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; 
+    margin-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 20px;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+}
+/* -------------------------------------------------------------------------------- */
+/* Gear Images */
+.gear-images {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.gear-images img:hover {
+    opacity: 0.6; 
+}
+/* -------------------------------------------------------------------------------- */
+/* Font settings for p, h1, h2, h3, h4 */
+#name {
+    font-family: 'Syne', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(183, 182, 182);
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background: hsl(0, 0%, 9%);
+    padding: 10px;
+}
+/* -------------------------------------------------------------------------------- */
+/* Navigation Bar Stuff */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    font-family: 'Syne', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.4s;
+}
+/* -------------------------------------------------------------------------------- */
+/* Footer + Social Media Icons Stuff */
+footer {
+    background: hsl(0, 0%, 9%);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+/* -------------------------------------------------------------------------------- */
+/* Lightroom Presets Slider */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-left {
+    left: 1rem;
+}
+
+.arrow-right {
+    right: 1rem;
+}
+
+.arrow:hover {
+    color: #ccc;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.slider-nav a.active {
+    opacity: 1;
+}
+
+#download-icon:hover {
+    opacity: 0.6;
+}
+/* -------------------------------------------------------------------------------- */
+/* Nav List Underline Animation */
+@keyframes underline {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .animated-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .animated-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    width: 0;
+    background-color: #ffffff; /* Adjust the color of the underline */
+    transition: width 0.3s ease; /* Add transition for a smooth effect */
+  }
+
+  .animated-underline:hover::after {
+    width: 85%;
+  }

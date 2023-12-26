@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gear - TIMOTHY HOANG</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Syne:wght@700&display=swap" rel="stylesheet"> <!--Lato 300, Syne 700-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Scroll Animations -->
+    </head>
+
+    <body> 
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <div class="animated-underline"><li>
+                        <a href="home.html">PORTFOLIO</a></li>
+                    </div>
+
+                    <div class="animated-underline"><li>
+                        <a href="about.html">ABOUT</a></li>
+                    </div>
+
+                    <div class="animated-underline"><li>
+                        <a href="gear.html">GEAR/PRESETS</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="Heading" data-aos="fade-right">
+                <h1 id="name">TIMOTHY HOANG</h1>
+                <h4>Gear & Lightroom Presets I Use</h4>
+                <p class="intro-space"></p> 
+            </div>
+            
+            <div data-aos="fade-right">
+                <h1>MY GEAR</h1>
+                <p class="intro-space"></p>
+            </div>
+
+            <div class="image-group">
+                <div class="gear-images" data-aos="zoom-in">
+                    <a href="https://www.amazon.com/Sony-Full-Frame-Mirrorless-Interchangeable-Lens-ILCE7M3/dp/B07B43WPVK/ref=sr_1_3?crid=HO63C8PU2XYN&keywords=sony+a73&qid=1692071427&sprefix=sony+a7%2Caps%2C253&sr=8-3" target="_blank">
+                    <img src="a73.png" alt="Sony A7 III"></a>
+                    <h2>SONY A7 III</h2>
+                </div>
+                <div class="gear-images" data-aos="zoom-in">
+                    <a href="https://www.amazon.com/Sony-28-70mm-F3-5-5-6-Interchangeable-Standard/dp/B00GTXHQ8Q/ref=sr_1_3?crid=36IFQG6NHTRLL&keywords=sony+sel+28-70&qid=1692071489&sprefix=sony+sel+28-70%2Caps%2C158&sr=8-3" target="_blank">
+                    <img src="sony SEL.png" alt="Sony SEL Lense"></a>
+                    <h2>SONY SEL 28-70 MM</h2>
+                </div>
+                <div class="gear-images" data-aos="zoom-in">
+                    <a href="https://www.amazon.com/AmazonBasics-Lightweight-Camera-Mount-Tripod/dp/B00XI87KV8/ref=asc_df_B00XI87KV8/?tag=hyprod-20&linkCode=df0&hvadid=167139312229&hvpos=&hvnetw=g&hvrand=7421823641895079536&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033275&hvtargid=pla-195080036955&psc=1&mcid=fca2ab2d85b83f299218b7ad95f7ba00&gclid=CjwKCAiAvoqsBhB9EiwA9XTWGYwqm8mWkFCzlJ05R3wtkzISACJbxll33t_5TB7BFkSO-iyIw0oeOBoCwx4QAvD_BwE" target="_blank">
+                    <img src="tripod.png" alt="Amazon Basics Tripod" style="margin: -4px;"></a>
+                    <h2>AMAZON BASICS TRIPOD</h2>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div data-aos="fade-right">
+                <h1 style="display: inline-block; margin-right: 10px;">MY LIGHTROOM PRESETS</h1>
+                <a href="https://drive.google.com/drive/folders/152H61BzAtul2P6HHkx8wARjObW17_xCd?usp=sharing" target="_blank">
+                    <img src="download-icon.png" id="download-icon" alt="Download Lightroom Presets" style="vertical-align: -17%;"></a> 
+            </div>
+            
+
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="arrow arrow-left">&lt;</div> <!-- Left Arrow -->
+                    <div class="slider" data-aos="fade-right">
+                        <img id="slide-1" src="NEON GLOW.png" alt="Preset 1">
+                        <img id="slide-2" src="ORANGE & TEAL.png" alt="Preset 2">
+                        <img id="slide-3" src="BLACK & WHITE.png" alt="Preset 3">
+                    </div>
+                    <div class="arrow arrow-right">&gt;</div> <!-- Right Arrow -->
+                    <!-- Nav Buttons -->
+                    <div class="slider-nav">
+                        <a id="nav-button1" href="#slide-1"></a>
+                        <a id="nav-button2" href="#slide-2"></a>
+                        <a id="nav-button3" href="#slide-3"></a>
+                    </div>
+                </div>
+            </div> 
+            <br>           
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/timmh_7/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/timohoang/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="mailto:timothy_hoang@outlook.com" target="_blank"><img src="email-icon.png" alt="Email"></a>
+                </div>
+                <h3>&copy; TIMOTHY HOANG</h3>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
