@@ -21,6 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 /* -------------------------------------------------------------------------------- */
+// Loading Overlay Logic
+window.addEventListener('DOMContentLoaded', function () {
+    const overlay = document.getElementById('loading-overlay');
+    if (!overlay) return;
+    function hideOverlay() {
+        overlay.classList.add('hidden');
+        setTimeout(() => overlay.style.display = 'none', 500);
+    }
+    if (document.readyState === 'complete') {
+        hideOverlay();
+    } else {
+        window.addEventListener('load', hideOverlay);
+    }
+});
+/* -------------------------------------------------------------------------------- */
 // Code for sliding cards LightRoom Presets
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.arrow-left');
